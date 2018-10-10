@@ -1,0 +1,17 @@
+uuid: b910c5cb-3fa0-498f-971a-eeb009fcf271
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: music
+label: Music
+logic: and
+conditions:
+  c7e864c3-15b2-48f4-9ad8-b9ce8ee3adfb:
+    id: request_path
+    pages: "/music\r\n/music/*"
+    negate: false
+    context_mapping: {  }
+    uuid: c7e864c3-15b2-48f4-9ad8-b9ce8ee3adfb
+allow_other_conditions: false

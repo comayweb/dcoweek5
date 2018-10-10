@@ -1,0 +1,33 @@
+uuid: 61e13a5a-5601-4c5f-907b-223f9f1a8306
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.tv
+  content:
+    - 'block_content:basic:646fd79c-0f42-459c-afef-cfc62598758a'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bootstrap
+id: allabouttv
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:646fd79c-0f42-459c-afef-cfc62598758a'
+settings:
+  id: 'block_content:646fd79c-0f42-459c-afef-cfc62598758a'
+  label: 'All about TV'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: tv
+    context_mapping: {  }

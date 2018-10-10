@@ -1,0 +1,17 @@
+uuid: 6e53e2e7-a670-4507-93bf-660ef6703ced
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: movies
+label: Movies
+logic: and
+conditions:
+  0daac476-a240-4d12-a8c8-745b91dbb12c:
+    id: request_path
+    pages: "/movies\r\n/movies/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 0daac476-a240-4d12-a8c8-745b91dbb12c
+allow_other_conditions: false

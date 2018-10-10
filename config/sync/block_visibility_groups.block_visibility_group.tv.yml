@@ -1,0 +1,17 @@
+uuid: 4289ee07-6681-4bd7-8c35-a9b3773dd78c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: tv
+label: TV
+logic: and
+conditions:
+  31738b1e-52ec-42c6-a890-a478428dfa6b:
+    id: request_path
+    pages: "/TV\r\n/TV/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 31738b1e-52ec-42c6-a890-a478428dfa6b
+allow_other_conditions: false

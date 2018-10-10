@@ -1,0 +1,70 @@
+uuid: ef574a80-10a5-4aa6-93b8-0e4e148bc416
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_movie
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - entity_reference_dialog_formatter
+    - image
+    - smart_trim
+    - user
+_core:
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    type: smart_trim
+    weight: 1
+    region: content
+    settings:
+      trim_length: 12
+      trim_type: words
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_link: true
+      more_text: ' [ ... Read the rest of the article]'
+      more_class: more-link
+      summary_handler: trim
+      wrap_output: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    label: hidden
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+  field_movie:
+    weight: 2
+    label: above
+    settings:
+      link_title: Movie
+      dialog_width: ''
+      use_entity_label: 0
+    third_party_settings: {  }
+    type: entity_reference_dialog
+    region: content
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_tags: true

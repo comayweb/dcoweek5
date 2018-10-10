@@ -1,0 +1,101 @@
+uuid: 80cd70e9-62f0-4d38-9668-67788fdad353
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.some_articles_page
+    - system.menu.main
+    - views.view.movies
+    - views.view.newest_articles
+  content:
+    - 'block_content:basic:a6ee973a-509f-4216-af1d-f4101e927219'
+  module:
+    - block_content
+    - panels
+    - search
+    - system
+    - user
+    - views
+id: some_articles_page-panels_variant-0
+label: 3-col
+variant: panels_variant
+variant_settings:
+  blocks:
+    b0a8850c-0f95-4e29-8451-2b3e027fd51f:
+      id: user_login_block
+      label: 'User login'
+      provider: user
+      label_display: visible
+      region: first
+      weight: 3
+      uuid: b0a8850c-0f95-4e29-8451-2b3e027fd51f
+      context_mapping: {  }
+    8c717364-8c1c-4bbd-be5e-bb202c0ad455:
+      id: search_form_block
+      label: 'Search form'
+      provider: search
+      label_display: visible
+      region: first
+      weight: 1
+      uuid: 8c717364-8c1c-4bbd-be5e-bb202c0ad455
+      context_mapping: {  }
+    76860c64-8eb2-4f1c-a344-73a64409b511:
+      id: 'system_menu_block:main'
+      label: 'Main navigation'
+      provider: system
+      label_display: '0'
+      level: 1
+      depth: 0
+      region: top
+      weight: 1
+      uuid: 76860c64-8eb2-4f1c-a344-73a64409b511
+      context_mapping: {  }
+    98d3ada6-8e00-486e-8980-721f764e3f98:
+      id: 'views_block:newest_articles-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: 1
+      uuid: 98d3ada6-8e00-486e-8980-721f764e3f98
+      context_mapping: {  }
+    5e2fe2af-76e0-4709-b94c-c7a4d9a2a9ee:
+      id: 'block_content:a6ee973a-509f-4216-af1d-f4101e927219'
+      label: 'My favorite movie'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: top
+      weight: 2
+      uuid: 5e2fe2af-76e0-4709-b94c-c7a4d9a2a9ee
+      context_mapping: {  }
+    2d61f6ce-85b2-4ae5-a5b4-49e171f1b160:
+      id: 'views_block:movies-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: 2
+      uuid: 2d61f6ce-85b2-4ae5-a5b4-49e171f1b160
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 2aa6e19d-6e4f-4431-8989-208929d683e5
+  label: null
+  weight: 0
+  layout: layout_twocol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: some_articles_page-panels_variant-0
+  builder: ipe
+page: some_articles_page
+weight: -10
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,8 @@
+uuid: b24f5979-f13c-4fc3-8456-da7e34997990
+langcode: en
+status: true
+dependencies: {  }
+id: image_block
+label: 'Image Block'
+revision: 0
+description: 'Use this to add images in a block.'

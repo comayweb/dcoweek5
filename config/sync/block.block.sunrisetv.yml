@@ -1,0 +1,33 @@
+uuid: cbcde9c0-c957-42ed-8663-6d6d7e8f4322
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.tv
+  content:
+    - 'block_content:image_block:7bcffa3c-cfc2-414a-9390-9034496e44f7'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bootstrap
+id: sunrisetv
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:7bcffa3c-cfc2-414a-9390-9034496e44f7'
+settings:
+  id: 'block_content:7bcffa3c-cfc2-414a-9390-9034496e44f7'
+  label: 'Sunrise TV'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: tv
+    context_mapping: {  }

@@ -1,0 +1,14 @@
+uuid: a35aa2ec-3227-43d7-9707-b905430d8ce4
+name: 'DCO Week 5'
+mail: stephen@rosewood.us.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

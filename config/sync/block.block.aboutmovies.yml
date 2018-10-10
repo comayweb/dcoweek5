@@ -1,0 +1,33 @@
+uuid: 2fee627b-7294-41d4-a132-58206aeafd0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.movies
+  content:
+    - 'block_content:basic:e695ae90-073d-4483-ab71-ff0b56a13d7b'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bootstrap
+id: aboutmovies
+theme: bootstrap
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:e695ae90-073d-4483-ab71-ff0b56a13d7b'
+settings:
+  id: 'block_content:e695ae90-073d-4483-ab71-ff0b56a13d7b'
+  label: 'About movies'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: movies
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: d4a20333-e7cd-40ed-bffe-34787455018d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Paragraph Page'
+type: paragraph_page
+description: 'Add a paragraph page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

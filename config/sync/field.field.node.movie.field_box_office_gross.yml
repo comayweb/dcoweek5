@@ -1,0 +1,23 @@
+uuid: cf24ef92-fa82-45da-95fa-1d31335c2796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_box_office_gross
+    - node.type.movie
+id: node.movie.field_box_office_gross
+field_name: field_box_office_gross
+entity_type: node
+bundle: movie
+label: 'Box office gross'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

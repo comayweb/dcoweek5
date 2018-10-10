@@ -1,0 +1,56 @@
+uuid: 634fb890-48df-40ba-8501-22291e15d16f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.field_box_office_gross
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_poster_image
+    - field.field.node.movie.field_year_of_release
+    - image.style.large
+    - node.type.movie
+  module:
+    - image
+    - text
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_box_office_gross:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_poster_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_year_of_release:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  links: true

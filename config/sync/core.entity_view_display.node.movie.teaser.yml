@@ -1,0 +1,50 @@
+uuid: f9708de4-8575-4100-8f39-438453a55dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.field_box_office_gross
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_poster_image
+    - field.field.node.movie.field_year_of_release
+    - image.style.medium
+    - node.type.movie
+  module:
+    - image
+    - text
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  field_description:
+    type: text_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+  field_poster_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_year_of_release:
+    type: number_integer
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+hidden:
+  field_box_office_gross: true
+  links: true

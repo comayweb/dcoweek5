@@ -1,0 +1,12 @@
+uuid: aca29e55-a6a2-4694-a961-0f55ca3b6c5c
+langcode: en
+status: true
+dependencies: {  }
+id: some_articles_page
+label: 'Some Articles Page'
+description: 'a page with some articles'
+use_admin_theme: false
+path: /some-articles
+access_logic: and
+access_conditions: {  }
+parameters: {  }
